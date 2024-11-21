@@ -1,0 +1,79 @@
+/* General body styling for both pages */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling for the main content */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Textarea for news input */
+textarea {
+    width: 100%;
+    height: 150px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+/* Styling for result page text */
+p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+}
+
+/* Strong tag for the prediction result */
+strong {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Link to go back */
+a {
+    text-decoration: none;
+    color: #5cb85c;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+a:hover {
+    color: #4cae4c;
+}
