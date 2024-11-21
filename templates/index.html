@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <title>Fake News Detector</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='static/styles.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fake News Detection</h1>
+        <form action="/predict" method="post">
+            <textarea name="news" placeholder="Enter news text here..." required></textarea>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
